@@ -1,5 +1,5 @@
 {
-  "name": "peachfinance-uikit",
+  "name": "dragonballfinance-uikit",
   "version": "0.10.1",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
