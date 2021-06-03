@@ -98,21 +98,21 @@ export const links = [
     label: "More",
     icon: "MoreIcon",
     items: [
-      // {
-      //   label: "Voting",
-      //   href: "https://voting.pancakeswap.finance",
-      // },
       {
-          label: "Github",
-          href: "https://github.com/goosedefi/",
+        label: 'Github',
+        href: 'https://github.com/DragonBallFinance',
       },
       {
-          label: "Docs",
-          href: "https://goosedefi.gitbook.io/goose-finance/",
+        label: 'Docs',
+        href: 'https://docs.dragonballfinance.org/',
       },
       {
-          label: "Blog",
-          href: "https://goosefinance.medium.com/",
+        label: 'Blog',
+        href: 'https://dragonballfinance.medium.com/',
+      },
+      {
+        label: 'Whitepaper',
+        href: 'https://dragonballfinance.org/Whitepaper.pdf',
       },
     ],
   },

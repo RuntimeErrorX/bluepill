@@ -2143,21 +2143,21 @@ var links = [
         label: "More",
         icon: "MoreIcon",
         items: [
-            // {
-            //   label: "Voting",
-            //   href: "https://voting.pancakeswap.finance",
-            // },
             {
-                label: "Github",
-                href: "https://github.com/goosedefi/",
+              label: 'Github',
+              href: 'https://github.com/RuntimeErrorX/DragonballFinance-Front-End/tree/DB-Finance-Dev,
             },
             {
-                label: "Docs",
-                href: "https://goosedefi.gitbook.io/goose-finance/",
+              label: 'Docs',
+              href: 'https://docs.dragonballfinance.org/',
             },
             {
-                label: "Blog",
-                href: "https://goosefinance.medium.com/",
+              label: 'Blog',
+              href: 'https://dragonballfinance.medium.com/',
+            },
+            {
+              label: 'Whitepaper',
+              href: 'https://dragonballfinance.org/Whitepaper.pdf',
             },
         ],
     },
@@ -2168,8 +2168,12 @@ var socials = [
         icon: "TelegramIcon",
         items: [
             {
-                label: "English",
-                href: "https://t.me/peachdefi",
+                label: "Announcement Channel",
+                href: "https://t.me/dragonballfinancenews",
+            },
+            {
+                label: "Chat",
+                href: "https://t.me/dragonballfinance_org",
             },
             // {
             //   label: "Bahasa Indonesia",
@@ -2211,20 +2215,12 @@ var socials = [
             //   label: "Français",
             //   href: "https://t.me/pancakeswapfr",
             // },
-            {
-                label: "Announcements",
-                href: "https://t.me/peachfinanceann",
-            },
-            {
-                label: "Price Bot",
-                href: "https://t.me/BinanceRocketPEACH",
-            },
         ],
     },
     {
-        label: "Twitter",
-        icon: "TwitterIcon",
-        href: "https://twitter.com/PeachDefi",
+      label: "Twitter",
+      icon: "TwitterIcon",
+      href: "https://twitter.com/dragonballdefi",
     },
 ];
 var MENU_HEIGHT = 64;
