@@ -116,6 +116,25 @@ export const links = [
       },
     ],
   },
+  {
+    label: 'Roadmap',
+    icon: 'RoadmapIcon',
+    href: 'https://dragonballfinance.org/Roadmap',
+  },
+  {
+    label: 'Audits',
+    icon: 'AuditIcon',
+    items: [
+      {
+        label: 'DBALL Audit',
+        href: 'https://dragonballfinance.org/Dball.pdf',
+      },
+      {
+        label: 'SENZU Audit',
+        href: 'https://dragonballfinance.org/Senzu.pdf',
+      },
+    ],
+  },
 ];
 
 export const socials = [
