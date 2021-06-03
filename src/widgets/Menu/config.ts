@@ -33,16 +33,16 @@ export const links = [
     icon: "TicketIcon",
     href: "/lottery",
   },
-  {
-    label: "NFT",
-    icon: "GooseIcon",
-    href: "/nft",
-  },
-  {
-    label: "IFO",
-    icon: "GooseIcon",
-    href: "/nft",
-  },
+  //{
+  //  label: "NFT",
+  //  icon: "GooseIcon",
+  //  href: "/nft",
+  //},
+  //{
+  //  label: "IFO",
+  //  icon: "GooseIcon",
+  //  href: "/nft",
+  //},
   {
     label: "Profile & Teams",
     icon: "GroupsIcon",
@@ -103,16 +103,16 @@ export const links = [
       //   href: "https://voting.pancakeswap.finance",
       // },
       {
-        label: "Github",
-        href: "https://github.com/goosedefi/",
+          label: "Github",
+          href: "https://github.com/goosedefi/",
       },
       {
-        label: "Docs",
-        href: "https://goosedefi.gitbook.io/goose-finance/",
+          label: "Docs",
+          href: "https://goosedefi.gitbook.io/goose-finance/",
       },
       {
-        label: "Blog",
-        href: "https://goosefinance.medium.com/",
+          label: "Blog",
+          href: "https://goosefinance.medium.com/",
       },
     ],
   },
@@ -124,8 +124,12 @@ export const socials = [
     icon: "TelegramIcon",
     items: [
       {
-        label: "English",
-        href: "https://t.me/peachdefi",
+          label: "Announcement Channel",
+          href: "https://t.me/dragonballfinancenews",
+      },
+      {
+          label: "Chat",
+          href: "https://t.me/dragonballfinance_org",
       },
       // {
       //   label: "Bahasa Indonesia",
@@ -167,20 +171,20 @@ export const socials = [
       //   label: "Français",
       //   href: "https://t.me/pancakeswapfr",
       // },
-      {
-        label: "Announcements",
-        href: "https://t.me/peachfinanceann",
-      },
-      {
-        label: "Price Bot",
-        href: "https://t.me/BinanceRocketPEACH",
-      },
+      // {
+      //  label: "Announcements",
+      //  href: "https://t.me/peachfinanceann",
+      //},
+      //{
+      //  label: "Price Bot",
+      //  href: "https://t.me/BinanceRocketPEACH",
+      //},
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/PeachDefi",
+    href: "https://twitter.com/dragonballdefi",
   },
   //  {
   //    label: "Reddit",
