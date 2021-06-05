@@ -415,7 +415,7 @@ var Icon$v = function (props) {
 
 var Icon$w = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React__default['default'].createElement("image", { width: 90, height: 90, href: "/images/incubator/9.png" })));
+        React__default['default'].createElement("image", { width: 90, height: 90, href: "/images/egg/13.png" })));
 };
 
 var Icon$x = function (props) {
@@ -2394,7 +2394,7 @@ var PanelFooter = function (_a) {
             }))),
         React__default['default'].createElement(SocialEntry, null,
             cakePrice2Usd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
+                React__default['default'].createElement(Icon$w, { width: "24px", mr: "8px" }),
                 React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePrice2Usd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
             React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons$1[social.icon];
@@ -3048,7 +3048,6 @@ exports.CopyToClipboard = CopyToClipboard;
 exports.Dropdown = Dropdown;
 exports.ErrorIcon = Icon$1;
 exports.Flex = Flex;
-exports.GooseRoundIcon = Icon$w;
 exports.Heading = Heading;
 exports.HelpIcon = Icon$o;
 exports.IconButton = IconButton;
@@ -3074,6 +3073,7 @@ exports.Radio = Radio;
 exports.RemoveIcon = Icon$y;
 exports.ResetCSS = ResetCSS;
 exports.SearchIcon = Icon$E;
+exports.Senzu = Icon$w;
 exports.Skeleton = Skeleton;
 exports.Spinner = Spinner;
 exports.Svg = Svg;
