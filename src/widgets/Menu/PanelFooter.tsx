@@ -54,6 +54,15 @@ const SocialEntry = styled.div`
   padding: 0 16px;
 `;
 
+const PriceEntry = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: ${MENU_ENTRY_HEIGHT}px;
+  padding: 0 16px;
+  margin: auto;
+`;
+
 const PanelFooter: React.FC<Props> = ({
   isPushed,
   pushNav,
@@ -112,7 +121,7 @@ const PanelFooter: React.FC<Props> = ({
           })}
         </Flex>
       </SocialEntry>
-      <SocialEntry>
+      <PriceEntry>
         {cakePrice2Usd ? (
           <PriceLink href={priceLink2} target="_blank">
             <Senzu width="24px" mr="8px" />
@@ -121,7 +130,7 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24} />
         )}
-        <Flex>
+        {/* <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
             const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
@@ -143,8 +152,8 @@ const PanelFooter: React.FC<Props> = ({
               </Link>
             );
           })}
-        </Flex>
-      </SocialEntry>
+        </Flex> */}
+      </PriceEntry>
       <SettingsEntry>
         <Button variant="text" onClick={() => toggleTheme(!isDark)}>
           {/* alignItems center is a Safari fix */}

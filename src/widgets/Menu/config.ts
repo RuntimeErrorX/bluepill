@@ -122,18 +122,14 @@ export const links = [
     href: 'https://dragonballfinance.org/Roadmap',
   },
   {
-    label: 'Audits',
+    label: 'DBALL Audit',
     icon: 'AuditIcon',
-    items: [
-      {
-        label: 'DBALL Audit',
-        href: 'https://dragonballfinance.org/Dball.pdf',
-      },
-      {
-        label: 'SENZU Audit',
-        href: 'https://dragonballfinance.org/Senzu.pdf',
-      },
-    ],
+    href: 'https://dragonballfinance.org/Dball.pdf',
+  },
+  {
+    label: 'SENZU Audit',
+    icon: 'AuditIcon',
+    href: 'https://dragonballfinance.org/Senzu.pdf',
   },
 ];
 
