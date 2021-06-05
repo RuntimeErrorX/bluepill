@@ -65,6 +65,7 @@ const PanelFooter: React.FC<Props> = ({
   langs,
   setLang,
   priceLink,
+  priceLink2,
 }) => {
   if (!isPushed) {
     return (
@@ -113,7 +114,7 @@ const PanelFooter: React.FC<Props> = ({
       </SocialEntry>
       <SocialEntry>
         {cakePrice2Usd ? (
-          <PriceLink href={priceLink} target="_blank">
+          <PriceLink href={priceLink2} target="_blank">
             <Senzu width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePrice2Usd.toFixed(3)}`}</Text>
           </PriceLink>
