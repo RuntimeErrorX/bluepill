@@ -60,6 +60,7 @@ const PanelFooter: React.FC<Props> = ({
   toggleTheme,
   isDark,
   cakePriceUsd,
+  cakePrice2Usd,
   currentLang,
   langs,
   setLang,
@@ -82,6 +83,39 @@ const PanelFooter: React.FC<Props> = ({
           <PriceLink href={priceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24} />
+        )}
+        <Flex>
+          {socials.map((social, index) => {
+            const Icon = Icons[social.icon];
+            const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
+            const mr = index < socials.length - 1 ? "8px" : 0;
+            if (social.items) {
+              return (
+                <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>
+                  {social.items.map((item) => (
+                    <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
+                      {item.label}
+                    </Link>
+                  ))}
+                </Dropdown>
+              );
+            }
+            return (
+              <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
+                <Icon {...iconProps} />
+              </Link>
+            );
+          })}
+        </Flex>
+      </SocialEntry>
+      <SocialEntry>
+        {cakePrice2Usd ? (
+          <PriceLink href={priceLink} target="_blank">
+            <PancakeRoundIcon width="24px" mr="8px" />
+            <Text color="textSubtle" bold>{`$${cakePrice2Usd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24} />
