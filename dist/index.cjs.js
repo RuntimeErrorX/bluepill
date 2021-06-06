@@ -2369,16 +2369,19 @@ var SettingsEntry = styled__default['default'].div(templateObject_4$2 || (templa
 var SocialEntry = styled__default['default'].div(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PriceEntry = styled__default['default'].div(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n  margin: auto;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n  margin: auto;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, cakePrice2Usd = _a.cakePrice2Usd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang, priceLink = _a.priceLink, priceLink2 = _a.priceLink2;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd; _a.cakePrice2Usd; var currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang, priceLink = _a.priceLink, priceLink2 = _a.priceLink2;
     if (!isPushed) {
         return (React__default['default'].createElement(Container$4, null,
             React__default['default'].createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
                 React__default['default'].createElement(Icon$l, null))));
     }
     return (React__default['default'].createElement(Container$4, null,
-        React__default['default'].createElement(SocialEntry, null,
-            cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
+        React__default['default'].createElement(SocialEntry, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
+            React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
+            React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
+        React__default['default'].createElement(PriceEntry, null,
+            cakePriceUsd ? (React__default['default'].createElement(PriceLink2, { href: priceLink2, target: "_blank" },
+                React__default['default'].createElement(Icon$w, { width: "24px", mr: "8px" }),
                 React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
             React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons$1[social.icon];
@@ -2390,9 +2393,6 @@ var PanelFooter = function (_a) {
                 return (React__default['default'].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
                     React__default['default'].createElement(Icon, __assign({}, iconProps))));
             }))),
-        React__default['default'].createElement(PriceEntry, null, cakePrice2Usd ? (React__default['default'].createElement(PriceLink2, { href: priceLink2, target: "_blank" },
-            React__default['default'].createElement(Icon$w, { width: "24px", mr: "8px" }),
-            React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePrice2Usd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
         React__default['default'].createElement(SettingsEntry, null,
             React__default['default'].createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
                 React__default['default'].createElement(Flex, { alignItems: "center" },
