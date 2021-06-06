@@ -112,10 +112,10 @@ const PanelFooter: React.FC<Props> = ({
         )}
       </SocialEntry>
       <PriceEntry>
-        {cakePriceUsd ? (
+        {cakePrice2Usd ? (
           <PriceLink2 href={priceLink2} target="_blank">
             <Senzu width="24px" mr="8px" />
-            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+            <Text color="textSubtle" bold>{`$${cakePrice2Usd.toFixed(3)}`}</Text>
           </PriceLink2>
         ) : (
           <Skeleton width={80} height={24} />
