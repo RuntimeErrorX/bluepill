@@ -38,6 +38,19 @@ const PriceLink = styled.a`
   }
 `;
 
+const PriceLink2 = styled.a`
+  display: flex;
+  align-items: center;
+  svg {
+    transition: transform 0.3s;
+  }
+  :hover {
+    svg {
+      transform: scale(1.2);
+    }
+  }
+`;
+
 const SettingsEntry = styled.div`
   display: flex;
   align-items: center;
@@ -123,10 +136,10 @@ const PanelFooter: React.FC<Props> = ({
       </SocialEntry>
       <PriceEntry>
         {cakePrice2Usd ? (
-          <PriceLink href={priceLink2} target="_blank">
+          <PriceLink2 href={priceLink2} target="_blank">
             <Senzu width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePrice2Usd.toFixed(3)}`}</Text>
-          </PriceLink>
+          </PriceLink2>
         ) : (
           <Skeleton width={80} height={24} />
         )}
