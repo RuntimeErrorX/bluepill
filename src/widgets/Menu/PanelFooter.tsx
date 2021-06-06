@@ -110,6 +110,16 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24} />
         )}
+      </SocialEntry>
+      <PriceEntry>
+        {cakePriceUsd ? (
+          <PriceLink2 href={priceLink2} target="_blank">
+            <Senzu width="24px" mr="8px" />
+            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+          </PriceLink2>
+        ) : (
+          <Skeleton width={80} height={24} />
+        )}
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
@@ -133,39 +143,6 @@ const PanelFooter: React.FC<Props> = ({
             );
           })}
         </Flex>
-      </SocialEntry>
-      <PriceEntry>
-        {cakePrice2Usd ? (
-          <PriceLink2 href={priceLink2} target="_blank">
-            <Senzu width="24px" mr="8px" />
-            <Text color="textSubtle" bold>{`$${cakePrice2Usd.toFixed(3)}`}</Text>
-          </PriceLink2>
-        ) : (
-          <Skeleton width={80} height={24} />
-        )}
-        {/* <Flex>
-          {socials.map((social, index) => {
-            const Icon = Icons[social.icon];
-            const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
-            const mr = index < socials.length - 1 ? "8px" : 0;
-            if (social.items) {
-              return (
-                <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>
-                  {social.items.map((item) => (
-                    <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
-                      {item.label}
-                    </Link>
-                  ))}
-                </Dropdown>
-              );
-            }
-            return (
-              <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
-                <Icon {...iconProps} />
-              </Link>
-            );
-          })}
-        </Flex> */}
       </PriceEntry>
       <SettingsEntry>
         <Button variant="text" onClick={() => toggleTheme(!isDark)}>
